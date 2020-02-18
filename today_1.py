@@ -114,6 +114,8 @@ def main():
                 csv_writer.writerow([url , title, event_url, description, event_date, event_timing, event_type, event_type_url,
                                      website, Aduience, Department, Department_url, HashTag, HashTag_url, event_sponser,
                                      event_contact_email, event_contact_phone, address, address_url])
+                
+                print('Event Name :  '+title)
 
                # Addmission_opening_timing = ''
 
