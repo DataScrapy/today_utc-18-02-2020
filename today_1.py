@@ -14,15 +14,15 @@ def func_html_parser(parse_url):
 #    'hi'
 
 def main():
-    file = datetime.today().strftime("%Y%m%d%H%M%S%f")
-    output_file = 'today_utc'+ file +'.csv'    
+    today = date.today()
+    file = today.strftime("%d%b%Y")
+    output_file = file +'_today_uci.csv'        
     data_to_file = open(output_file, 'w', newline='')
     csv_writer = csv.writer(data_to_file, delimiter=",")
     csv_writer.writerow(["Home Url","Event Name", "Event Url", "Description", "Event Date", "Event Timing", "Event Type", "Event Type Url",
                          "Website", "Aduience", "Department", "Department Url", "Hash Tag", "Hash Tag Url", "Event Sponser's",
                         "Event Contact Email", "Event Contact Phone No.", "Event Address", "Event Address Url"])
 
-    today = date.today()
     event_date = today.strftime("%Y/%m/%d")
 
     url = 'https://today.uci.edu/calendar/day/'
