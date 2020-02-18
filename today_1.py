@@ -10,8 +10,8 @@ def func_html_parser(parse_url):
     page_soup = soup(url_request.content, 'html5lib')
     return page_soup
 
-def func_write_to_csv():
-    'hi'
+#def func_write_to_csv():
+#    'hi'
 
 def main():
     output_file = 'today_utc.csv'
