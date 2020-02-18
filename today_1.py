@@ -14,7 +14,8 @@ def func_html_parser(parse_url):
 #    'hi'
 
 def main():
-    output_file = 'today_utc.csv'
+    file = datetime.today().strftime("%Y%m%d%H%M%S%f")
+    output_file = 'today_utc'+ file +'.csv'    
     data_to_file = open(output_file, 'w', newline='')
     csv_writer = csv.writer(data_to_file, delimiter=",")
     csv_writer.writerow(["Home Url","Event Name", "Event Url", "Description", "Event Date", "Event Timing", "Event Type", "Event Type Url",
