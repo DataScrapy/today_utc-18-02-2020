@@ -20,7 +20,7 @@ def main():
     data_to_file = open(output_file, 'w', newline='')
     csv_writer = csv.writer(data_to_file, delimiter=",")
     csv_writer.writerow(["Home Url","Event Name", "Event Url", "Image", "Image Url", "Description", "Event Date", "Event Timing", "Event Type", "Event Type Url",
-                         "Website", "Aduience", "Cost", "Department", "Department Url", "Hash Tag", "Hash Tag Url", "Event Sponser's",
+                         "Website", "Aduience", "Cost", "Department", "Department Url", "Hash Tag", "Hash Tag Url", "Event Sponser",
                         "Event Contact Email", "Event Contact Phone No.", "Event Location", "Event Location Map Url"])
 
     event_date = today.strftime("%Y/%m/%d")
