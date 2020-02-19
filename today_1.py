@@ -19,7 +19,7 @@ def main():
     output_file = file +'_today_uci.csv'        
     data_to_file = open(output_file, 'w', newline='')
     csv_writer = csv.writer(data_to_file, delimiter=",")
-    csv_writer.writerow(["Home Url","Event Name", "Event Url", "Description", "Event Date", "Event Timing", "Event Type", "Event Type Url",
+    csv_writer.writerow(["Home Url","Event Name", "Event Url", "Image", "Image Url", "Description", "Event Date", "Event Timing", "Event Type", "Event Type Url",
                          "Website", "Aduience", "Cost", "Department", "Department Url", "Hash Tag", "Hash Tag Url", "Event Sponser's",
                         "Event Contact Email", "Event Contact Phone No.", "Event Address", "Event Address Url"])
 
@@ -119,7 +119,7 @@ def main():
                     address = 'N/A'
                     pass
 
-                csv_writer.writerow([url , title, event_url, description, event_date, event_timing, event_type, event_type_url,
+                csv_writer.writerow([url , title, event_url, image, image_url, description, event_date, event_timing, event_type, event_type_url,
                                      website, Aduience, cost, Department, Department_url, HashTag, HashTag_url, event_sponser,
                                      event_contact_email, event_contact_phone, address, address_url])
                 
